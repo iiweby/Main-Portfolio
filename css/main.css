@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Tangerine&display=swap');
+
 /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
@@ -561,12 +563,12 @@ video {
   margin-right: auto;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
-}
-
 .mb-32{
   margin-bottom: 8rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
 }
 
 .flex{
@@ -577,6 +579,18 @@ video {
   display: none;
 }
 
+.h-96{
+  height: 24rem;
+}
+
+.h-auto{
+  height: auto;
+}
+
+.w-96{
+  width: 24rem;
+}
+
 .max-w-md{
   max-width: 28rem;
 }
@@ -585,16 +599,20 @@ video {
   max-width: 24rem;
 }
 
+.max-w-xl{
+  max-width: 36rem;
+}
+
 .flex-col{
   flex-direction: column;
 }
 
-.flex-col-reverse{
-  flex-direction: column-reverse;
-}
-
 .items-center{
   align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
 }
 
 .justify-between{
@@ -617,10 +635,10 @@ video {
   margin-bottom: calc(0px * var(--tw-space-y-reverse));
 }
 
-.space-y-12 > :not([hidden]) ~ :not([hidden]){
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
-  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .rounded-full{
@@ -632,6 +650,11 @@ video {
   background-color: rgb(20 99 243 / var(--tw-bg-opacity));
 }
 
+.bg-indigo-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 231 255 / var(--tw-bg-opacity));
+}
+
 .p-3{
   padding: 0.75rem;
 }
@@ -640,12 +663,9 @@ video {
   padding: 1.5rem;
 }
 
-.p-2{
-  padding: 0.5rem;
-}
-
-.p-8{
-  padding: 2rem;
+.px-24{
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .px-6{
@@ -657,16 +677,17 @@ video {
   padding-top: 0.5rem;
 }
 
-.pt-1{
-  padding-top: 0.25rem;
-}
-
-.pl-2{
-  padding-left: 0.5rem;
-}
-
 .text-center{
   text-align: center;
+}
+
+.font-mono{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-4xl{
@@ -678,9 +699,14 @@ video {
   font-weight: 700;
 }
 
-.text-brightRed{
+.text-blueRibbon{
   --tw-text-opacity: 1;
-  color: hsl(12 88% 59% / var(--tw-text-opacity));
+  color: rgb(20 99 243 / var(--tw-text-opacity));
+}
+
+.text-ironGray{
+  --tw-text-opacity: 1;
+  color: rgb(82 89 93 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -688,14 +714,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-blueRibbon{
-  --tw-text-opacity: 1;
-  color: rgb(20 99 243 / var(--tw-text-opacity));
-}
-
-.text-darkGrayishBlue{
-  --tw-text-opacity: 1;
-  color: hsl(227 12% 61% / var(--tw-text-opacity));
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .hover\:bg-darkBlueRibbon:hover{
@@ -706,6 +728,13 @@ video {
 .hover\:text-darkGrayishBlue:hover{
   --tw-text-opacity: 1;
   color: hsl(227 12% 61% / var(--tw-text-opacity));
+}
+
+@media (prefers-color-scheme: dark){
+  .dark\:shadow-gray-800{
+    --tw-shadow-color: #1f2937;
+    --tw-shadow: var(--tw-shadow-colored);
+  }
 }
 
 @media (min-width: 768px){
@@ -719,6 +748,14 @@ video {
 
   .md\:w-1\/2{
     width: 50%;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:justify-start{
+    justify-content: flex-start;
   }
 
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]){

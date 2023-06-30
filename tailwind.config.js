@@ -12,6 +12,9 @@ module.exports = {
     extend: {
       fontFamily: {
        'tangerine' : ['Tangerine', 'cursive'],
+       fontFamily: {
+      'Mono' : ['IBM Plex Mono', 'monospace']
+       },
       },
       colors: {
         brightRed: 'hsl (12, 88%, 59%)',
@@ -25,6 +28,9 @@ module.exports = {
         veryLightGray: 'hsl(0, 0%, 98%)',
         blueRibbon: '#1463F3',
         darkBlueRibbon: '#0028B9',
+        lightBlueRibbon: '#80BEFF',
+        inavy: '#0a192f',
+        ironGray: '#52595D',
         
       }
     },
