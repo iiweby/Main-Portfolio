@@ -16,7 +16,7 @@ module.exports = {
       'Mono' : ['IBM Plex Mono', 'monospace']
        },
        fontFamily: {
-        'Belanosima' : ['Belanosima', 'sans-serif']
+        'belanosima' : ['belanosima', 'sans-serif']
          },
       },
       colors: {
