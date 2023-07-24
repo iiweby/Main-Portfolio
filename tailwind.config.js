@@ -11,13 +11,10 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-       'tangerine' : ['Tangerine', 'cursive'],
-       fontFamily: {
-      'Mono' : ['IBM Plex Mono', 'monospace']
-       },
-       fontFamily: {
-        'belanosima' : ['belanosima', 'sans-serif']
-         },
+        'tangerine': ['Tangerine', 'cursive'],
+        'Mono': ['IBM Plex Mono', 'monospace'],
+        'belanosima': ['belanosima', 'sans-serif'],
+        'Montserrat': ['Montserrat', 'sans-serif'],
       },
       colors: {
         brightRed: 'hsl (12, 88%, 59%)',
