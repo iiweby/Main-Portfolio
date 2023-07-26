@@ -18,11 +18,10 @@
                 <a href="#"><h2 class="hover:scale-105 ease-in duration-500">Daniel<span class="text-blueRibbon">Paredes</span></h2></a>
             </div>
             <!-- Menu Items -->
-                <div class="hidden md:flex space-x-6">
-                    <a href="#" class="hover:text-darkGrayishBlue">About</a>
+                <div class="text-large hidden md:flex space-x-6">
+                    <a href="#aboutMe" class="hover:text-darkGrayishBlue">About</a>
                     <a href="#"class="hover:text-darkGrayishBlue">Experience</a>
-                    <a href="#"class="hover:text-darkGrayishBlue">Contact</a>
-                    <a href="#"class="hover:text-darkGrayishBlue">Contact</a>
+                    <a href="#"class="hover:text-darkGrayishBlue">Resume</a>
                     <a href="#"class="hover:text-darkGrayishBlue">Contact</a>
                 </div>
             <!-- Button (LinkedIn) -->
@@ -31,12 +30,28 @@
             <!-- Button (GitHub) -->
                     <a href="https://github.com/iiweby" target= "_blank" class="hover:scale-105 ease-in duration-500 hidden md:block p-3 pt-2 px-6 text-white bg-blueRibbon rounded-full baseline hover:bg-darkBlueRibbon"><i class="fa-xl fa-brands fa-github"></i></a>
                 </div>
+                <!-- Hamburger Icon -->
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-gradient-to-r from-cyan-500 to-blue-500 sm:w-auto sm:self-center left-24 right-24 drop-shadow-md rounded-lg">
+                <a href="#aboutMe" class="hover:text-darkGrayishBlue">About</a>
+                    <a href="#"class="hover:text-darkGrayishBlue">Experience</a>
+                    <a href="#"class="hover:text-darkGrayishBlue">Resume</a>
+                    <a href="#"class="hover:text-darkGrayishBlue">Contact</a>
+            </div>
         </div>
     </nav>
     <!-- Hero Section -->
     <section id="hero">
         <!-- Flex Container -->
-        <div class="container flex flex-col items-center px-24 mx-auto mt-12 space-y-0 md:flex-row md:space-y-0">
+        <div class="container flex flex-col items-center px-24 mx-auto  space-y-0 md:mt-32 md:flex-row md:space-y-0">
             <!-- Left Item -->
             <div class="flex flex-col mb-16 space-y-4 mt-12 md:w-1/2">
                 <p class="font-mono max-w-sm text-center text-blueRibbon md:text-left">
@@ -61,13 +76,13 @@
     <!-- About Me Section -->
     <section id="aboutMe">
         <!-- Flex Container -->
-        <div class="container flex flex-col px-24 mx-auto mt-24 space-y-12">
+        <div class="container mt-24 flex flex-col px-24 mx-auto md:mt-52 space-y-12">
             <div class="flex flex-col space-y-12">
                 <!-- About Me -->
                 <h1 class="text-center text-4xl font-bold">About Me</h1>
 
                     <div class="flex flex-row">
-                        <div class="font-Montserrat text-xl md: pr-48">
+                        <div class="leading-loose text-center font-Montserrat text-xl md:text-left md:pr-96">
                          <p>
                             I am Daniel Paredes, an aspiring software engineer with a deep passion for technology and a love for exploring new horizons. At the age of 14, I built my first desktop computer, igniting my fascination with the world of technology. Traveling has also become an integral part of my life, shaping my open-mindedness and problem-solving approach.
                          
@@ -123,6 +138,6 @@
         </div>
     </div>-->
     </section>
-
+<script src="js/script.js"></script>
 </body>
 </html>
