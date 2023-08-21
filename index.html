@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/748feb1175.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="css/main.css">
     <title>Portfolio</title>
 </head>
 <body class="bg-indigo-100">
+
     <!-- NavBar -->
-    <nav class="relative container mx-auto p-6">
+    <div class="p-6">
+    <nav class="navbar bg-ironGray backdrop-opacity-90 bg-opacity-50 rounded-full relative container sticky top-0 z-50 mx-auto p-6">
         <!-- Flex Container -->
         <div class="flex items-center justify-between">
         <!-- Logo -->
@@ -26,7 +29,7 @@
                 </div>
             <!-- Button (LinkedIn) -->
                 <div class="flex space-x-6 justify-stretch">
-                    <a href="www.linkedin.com/in/dannyparedes/" target= "_blank" class="hover:scale-105 ease-in duration-500 hidden md:block p-3 pt-2 px-6 text-white bg-blueRibbon rounded-full baseline hover:bg-darkBlueRibbon"><i class="fa-xl fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/dannyparedes/" target= "_blank" class="hover:scale-105 ease-in duration-500 hidden md:block p-3 pt-2 px-6 text-white bg-blueRibbon rounded-full baseline hover:bg-darkBlueRibbon"><i class="fa-xl fa-brands fa-linkedin"></i></a>
             <!-- Button (GitHub) -->
                     <a href="https://github.com/iiweby" target= "_blank" class="hover:scale-105 ease-in duration-500 hidden md:block p-3 pt-2 px-6 text-white bg-blueRibbon rounded-full baseline hover:bg-darkBlueRibbon"><i class="fa-xl fa-brands fa-github"></i></a>
                 </div>
@@ -134,16 +137,21 @@
     <!-- Resume Section -->
     <section id="Experience">
          <!-- Container  -->
-    <div class="container flex flex-col items-center px-24 mx-auto mt-10 space-y-0 md:flex-row md:space-y-0">
-        <div class="container flex flex-col mb-32 space-y-4">
-            <p class="font-belanosima text-4xl text-center">Resume:</p>
-            <!-- Resume Pic/Download -->
-            <div>
-                <img src="img/Resume.jpg" alt="Resume"> 
+         <div class="flex items-center justify-center mt-12">
+            <div class="container">
+                <p class="font-belanosima text-4xl text-center mb-4">Resume:</p>
+                <!-- Resume Pic/Download -->
+                <div class="flex justify-center">
+                    <img src="img/Resume.jpg" alt="Resume" class="max-w-sm">
+                    
+                </div>
             </div>
+        </div> 
+        <!-- Download Button -->
+        <div class="flex mt-12 mb-32 justify-center">
+            <a href="resume.jpg" download class="hover:scale-105 ease-in duration-500 hidden md:block p-3 pt-2 px-6 text-white bg-blueRibbon rounded-full baseline hover:bg-darkBlueRibbon">Download              <i class="fa-solid fa-download"></i></a>  
         </div>
-    </div>
     </section>
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
