@@ -32,7 +32,7 @@ const btn = document.getElementById('menu-btn');
 
   window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 0) {
+    if (window.scrollY > 0) { 
       navbar.classList.remove('bg-transparent');
       navbar.classList.add('bg-blue-500'); 
     } else {
