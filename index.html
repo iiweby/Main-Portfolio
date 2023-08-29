@@ -24,7 +24,7 @@
                     <a href="#aboutMe" class="hover:text-darkGrayishBlue">About</a>
                     <a href="#projects"class="hover:text-darkGrayishBlue">Projects</a>
                     <a href="#resume"class="hover:text-darkGrayishBlue">Resume</a>
-                    <a href="#contact"class="hover:text-darkGrayishBlue">Contact Me</a>
+                    <a id="contactMe"class="cursor-pointer hover:text-darkGrayishBlue">Contact Me</a>
                 </div>
             <!-- Button (LinkedIn) -->
                 <div class="flex space-x-6 justify-stretch">
@@ -46,10 +46,21 @@
                 <a href="#aboutMe" class="hover:text-darkGrayishBlue">About</a>
                     <a href="#"class="hover:text-darkGrayishBlue">Projects</a>
                     <a href="#"class="hover:text-darkGrayishBlue">Resume</a>
-                    <a href="#"class="hover:text-darkGrayishBlue">Contact</a>
+                    <a id="contactMe" class="hover:text-darkGrayishBlue">Contact</a>
             </div>
         </div>
     </nav>
+
+  
+  <div id="myModal" class="modal hidden fixed w-full h-full top-0 left-0 flex items-center justify-center bg-opacity-50 bg-gray-900">
+    <div class="modal-content bg-white w-1/2 p-6 rounded shadow-lg relative">
+        <h2 class="text-2xl font-semibold mb-4">Submission Form</h2>
+        <!-- Your form content goes here -->
+        <button id="closeModal" class="mt-4 bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded">
+            Close
+        </button>
+    </div>
+</div>
 
     <!-- Hero Section -->
     <section id="hero">

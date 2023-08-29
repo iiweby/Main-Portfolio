@@ -28,7 +28,34 @@ const btn = document.getElementById('menu-btn');
     }
   });
 
+  // Contact Me Pop Up
 
+  document.addEventListener("DOMContentLoaded", function() {
+    const openModalButton = document.getElementById("openModal");
+    const closeModalButton = document.getElementById("closeModal");
+    const modal = document.getElementById("myModal");
+    const contactMeAnchor = document.getElementById("contactMe"); // New line
+
+    openModalButton.addEventListener("click", function() {
+        modal.classList.remove("hidden");
+    });
+
+    closeModalButton.addEventListener("click", function() {
+        modal.classList.add("hidden");
+    });
+
+    contactMeAnchor.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        modal.classList.remove("hidden");
+    });
+
+    // Close the modal if the user clicks outside of it
+    window.addEventListener("click", function(event) {
+        if (event.target === modal) {
+            modal.classList.add("hidden");
+        }
+    });
+});
 
   window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
