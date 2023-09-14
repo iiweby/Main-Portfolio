@@ -34,7 +34,8 @@ const btn = document.getElementById('menu-btn');
     const openModalButton = document.getElementById("openModal");
     const closeModalButton = document.getElementById("closeModal");
     const modal = document.getElementById("myModal");
-    const contactMeAnchor = document.getElementById("contactMe"); // New line
+    const contactMeAnchor = document.getElementById("contactMe"); 
+    const heroContactAnchor = document.getElementById("heroContact"); // New line
 
     openModalButton.addEventListener("click", function() {
         modal.classList.remove("hidden");
@@ -43,6 +44,10 @@ const btn = document.getElementById('menu-btn');
     closeModalButton.addEventListener("click", function() {
         modal.classList.add("hidden");
     });
+    heroContactAnchor.addEventListener("click", function(event) {
+      event.preventDefault(); // Prevent default anchor behavior
+      modal.classList.remove("hidden");
+  });
 
     contactMeAnchor.addEventListener("click", function(event) {
         event.preventDefault(); // Prevent default anchor behavior
