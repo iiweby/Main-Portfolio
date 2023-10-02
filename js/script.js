@@ -9,7 +9,7 @@ const btn = document.getElementById('menu-btn');
 
   btn.addEventListener('click', () => {
     toggleMenu();
-  });
+  }); 
 
   // Add event listeners to each link inside the mobile menu to close the menu
   const mobileMenuLinks = document.querySelectorAll('#menu a');
@@ -28,7 +28,7 @@ const btn = document.getElementById('menu-btn');
     }
   });
 
-  // Contact Me Pop Up
+  // Contact Me Pop Up 
 
   document.addEventListener("DOMContentLoaded", function() {
     const openModalButton = document.getElementById("openModal");
