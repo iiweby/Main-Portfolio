@@ -1,6 +1,5 @@
 const btn = document.getElementById("menu-btn");
 const nav = document.getElementById("menu");
-// const popupSubmission = document.getElementsById("success-message");
 
 const toggleMenu = () => {
   btn.classList.toggle("open");
@@ -20,6 +19,17 @@ mobileMenuLinks.forEach((link) => {
       toggleMenu();
     }
   });
+});
+
+const closeModal = () => {
+  const modal = document.getElementById("myModal");
+  modal.classList.add("hidden");
+};
+
+// Add event listener to the "Close" button inside the success message
+const successCloseButton = document.getElementById("closeModal2");
+successCloseButton.addEventListener("click", () => {
+  closeModal(); // Close the entire modal when the "Close" button inside the success message is clicked
 });
 
 // Add event listener to the document body to close the menu when clicking outside
