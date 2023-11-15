@@ -22,51 +22,53 @@
 <body class="bg-indigo-100">
 
   <!-- NavBar -->
-  <nav class="navbar bg-ironGray backdrop-opacity-90 bg-opacity-50 relative container sticky top-0 z-50 mx-auto p-6">
-    <!-- Flex Container -->
-    <div class="flex items-center justify-between">
-      <!-- Logo -->
-      <div class="pt-2 font-bold">
-        <a href="#">
-          <h2 class="hover:scale-105 ease-in duration-500">Daniel<span class="text-blueRibbon">Paredes</span></h2>
-        </a>
-      </div>
-      <!-- Menu Items -->
-      <div class=" text-large hidden md:flex space-x-6">
-        <a href="#aboutMe" class="hover:text-darkGrayishBlue">About</a>
-        <a href="#projects" class="hover:text-darkGrayishBlue">Projects</a>
-        <a href="#resume" class="hover:text-darkGrayishBlue">Resume</a>
-        <a id="contactMe" class="cursor-pointer hover:text-darkGrayishBlue">Contact Me</a>
-      </div>
-      <!-- Button (LinkedIn) -->
-      <div class="flex space-x-6 justify-stretch">
-        <a href="https://www.linkedin.com/in/dannyparedes/" target="_blank"
-          class="hover:scale-105 ease-in duration-500 hidden md:block p-3 pt-2 px-6 text-white bg-blueRibbon rounded-full baseline hover:bg-darkBlueRibbon"><i
-            class="fa-xl fa-brands fa-linkedin"></i></a>
-        <!-- Button (GitHub) -->
-        <a href="https://github.com/iiweby" target="_blank"
-          class="hover:scale-105 ease-in duration-500 hidden md:block p-3 pt-2 px-6 text-white bg-blueRibbon rounded-full baseline hover:bg-darkBlueRibbon"><i
-            class="fa-xl fa-brands fa-github"></i></a>
-      </div>
-      <!-- Hamburger Icon -->
-      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-        <span class="hamburger-top"></span>
-        <span class="hamburger-middle"></span>
-        <span class="hamburger-bottom"></span>
-      </button>
+ <!-- NavBar -->
+<nav class="navbar bg-ironGray content-center backdrop-opacity-90 bg-opacity-50 container sticky top-0 z-50 mx-auto p-6">
+  <!-- Flex Container -->
+  <div class="flex items-center justify-between">
+    <!-- Logo -->
+    <div class="pt-2 font-bold">
+      <a href="#">
+        <h2 class="hover:scale-105 ease-in duration-500">Daniel<span class="text-blueRibbon">Paredes</span></h2>
+      </a>
     </div>
+    <!-- Menu Items -->
+    <div class="text-large hidden md:flex space-x-6 items-center justify-center flex-1"> <!-- Updated classes -->
+      <a href="#aboutMe" class="hover:text-darkGrayishBlue">About</a>
+      <a href="#projects" class="hover:text-darkGrayishBlue">Projects</a>
+      <a href="#resume" class="hover:text-darkGrayishBlue">Resume</a>
+      <a id="contactMe" class="cursor-pointer hover:text-darkGrayishBlue">Contact Me</a>
+    </div>
+    <!-- Button (LinkedIn) and Button (GitHub) -->
+    <div class="flex space-x-6">
+      <a href="https://www.linkedin.com/in/dannyparedes/" target="_blank"
+        class="hover:scale-105 ease-in duration-500 hidden md:block p-3 pt-2 px-6 text-white bg-blueRibbon rounded-full baseline hover:bg-darkBlueRibbon"><i
+          class="fa-xl fa-brands fa-linkedin"></i></a>
+      <!-- Button (GitHub) -->
+      <a href="https://github.com/iiweby" target="_blank"
+        class="hover:scale-105 ease-in duration-500 hidden md:block p-3 pt-2 px-6 text-white bg-blueRibbon rounded-full baseline hover:bg-darkBlueRibbon"><i
+          class="fa-xl fa-brands fa-github"></i></a>
+    </div>
+    <!-- Hamburger Icon -->
+    <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+  </div>
 
-    <!-- Mobile Menu -->
-    <div class="md:hidden">
-      <div id="menu"
-        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-gradient-to-r from-cyan-500 to-blue-500 sm:w-auto sm:self-center left-24 right-24 drop-shadow-md rounded-lg">
-        <a href="#aboutMe" class="hover:text-darkGrayishBlue">About</a>
-        <a href="#" class="hover:text-darkGrayishBlue">Projects</a>
-        <a href="#" class="hover:text-darkGrayishBlue">Resume</a>
-        <a id="contactMe" class="hover:text-darkGrayishBlue">Contact</a>
-      </div>
+  <!-- Mobile Menu -->
+  <div class="md:hidden">
+    <div id="menu"
+      class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-gradient-to-r from-cyan-500 to-blue-500 sm:w-auto sm:self-center left-24 right-24 drop-shadow-md rounded-lg">
+      <a href="#aboutMe" class="hover:text-darkGrayishBlue">About</a>
+      <a href="#" class="hover:text-darkGrayishBlue">Projects</a>
+      <a href="#" class="hover:text-darkGrayishBlue">Resume</a>
+      <a id="contactMe" class="hover:text-darkGrayishBlue">Contact</a>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <button id="openModal" class=" hidden bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
     Open Submission Form
@@ -106,9 +108,17 @@
                 </button>
             </div>
         </form>
-        <div id="success-message" class="hidden text-green-500 text-center font-semibold mt-4">
-            <p>Submission successful!</p>
+        <form>
+        <div id="success-message" class="hidden text-veryDarkBlue text-center font-semibold ">
+            <p>Thank You!</p>
+            <p>I will reach out to you within 1-2 business days.</p>
+            <div class="pt-4">
+            <button type="button" id="closeModal2" class="ml-4 bg-gray-300 hover:bg-gray-400 text-gray-800 px-4 py-2 rounded">
+              Close
+          </button>
         </div>
+        </div>
+      </form>
     </div>
     
 </div>
@@ -140,7 +150,7 @@
       </div>
       <!-- Image -->
       <div class=" md:block md:w-1/2">
-        <img class="rounded-full w-48 h-48 mx-auto h-auto max-w-xl shadow-xl dark:shadow-gray-800 md:w-96 md:h-96"
+        <img class="rounded-full w-48 h-48 mx-auto max-w-xl shadow-xl dark:shadow-gray-800 md:w-96 md:h-96"
           src="img/Picture-Of-Me.jpeg" alt="Photo Of Daniel Paredes">
       </div>
     </div>
@@ -246,7 +256,7 @@
 
         </div>
       </div>
-  </section>
+    </section>
 
   <!-- Resume Section -->
   <section id="resume">
