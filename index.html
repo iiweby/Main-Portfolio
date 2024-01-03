@@ -8,6 +8,7 @@
   <script src="https://kit.fontawesome.com/748feb1175.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript">
+
     (function() {
         emailjs.init('Oja_exmXLfnkm0bB0');
     })();
@@ -16,14 +17,15 @@
   
   <link rel="stylesheet" href="css/main.css">
   <title>Portfolio</title>
-</head> 
+</head>
 
 
 
 <body class="bg-indigo-100">
 
+
   <!-- NavBar -->
-  <nav class="navbar bg-ironGray backdrop-opacity-90 bg-opacity-50 relative container sticky top-0 z-50 mx-auto p-6">
+  <nav class="navbar bg-ironGray backdrop-opacity-90 bg-opacity-50 relative sticky top-0 z-50 p-6">
     <!-- Flex Container -->
     <div class="flex items-center justify-between">
       <!-- Logo -->
@@ -185,58 +187,61 @@
     </div>
   </section>
   <!-- Projects Section-->
-  <section id="projects">
-    <!-- Flex Container -->
-    <div class="containter flex flex-col px-24 mx-auto mt-52 space-y-12 md:mt-32">
-      <!-- Projects -->
-      <div class="space-y-24">
-        <h2 class="text-4xl font-bold text-center">
-          Projects:
-        </h2>
-        <div class="mx-auto md:space-x-12 md:flex flex-row">
-          <!-- Data Science Project -->
-          <div class="">
-            <img class="hidden md:block max-w-sm" src="img/Projectboard.png" alt="Projectboard Picture">
-            <p class="mt-4 text-center text-xl font-bold text-darkGreyishBlue">
-              Habit Tracking Journal</p>
-              <p class="mt-4 text-center">
-                Stack Used: <i class="fa-brands fa-react fa-xl"></i> <i class="fa-brands fa-xl fa-html5" style="color: #f56200;"></i> <i
-                  class="fa-brands fa-square-js fa-xl" style="color: #fbff00;"></i> <i class="fa-brands fa-css3-alt fa-xl"
-                  style="color: #2b5eb6;"></i> <i class="fa-brands fa-node fa-xl" style="color: #288a4b;"></i>
-              </p>
-              <p class="mt-4 text-center"> I made this project to keep track of how I am feeling each day, I am able to keep track of my emotions and keep a daily journal with this app.</p>
-          </div>
-          <div>
-            <!-- Portfolio Template -->
-            <img class="hidden md:block max-w-sm" src="img/Projectboard.png" alt="Projectboard Picture">
-            <p class="mt-4 text-center text-xl font-bold text-darkGreyishBlue">
-              Portfolio Template</p>
-            <p class="mt-4 text-center">
-              Stack Used: <i class="fa-brands fa-xl fa-html5" style="color: #f56200;"></i> <i
-                class="fa-brands fa-square-js fa-xl" style="color: #fbff00;"></i> <i class="fa-brands fa-css3-alt fa-xl"
-                style="color: #2b5eb6;"></i>
-            </p>
-            <p class="mt-4 text-center"> I made this project for other individuals to jumpstart their jounrey in web
-              development by making an easy to use template to make a portfolio</p>
-          </div>
-          <div class="">
-            <img class="hidden md:block max-w-sm" src="img/Projectboard.png" alt="Projectboard Picture">
-            <p class="mt-4 text-center text-xl font-bold text-darkGreyishBlue">
-              Life Expectancy Research</p>
-            <p class="mt-4 text-center">
-              Stack Used: <i class="fa-brands fa-xl fa-html5" style="color: #f56200;"></i> <i
-                class="fa-brands fa-r-project fa-xl" style="color: #0b46ad;"></i>
-            </p>
-            <p class="mt-4 text-center"> I made this project for other individuals to jumpstart their jounrey in web
-              development by making an easy to use template to make a portfolio</p>
-              <p class="font-bold mt-4 text-center">Open-source: <a href="https://github.com/iiweby"> <a href="https://github.com/iiweby" target="_blank"
-                class="hover:scale-105 ease-in duration-500 p-3 pt-2 px-4 text-white bg-blueRibbon rounded-full baseline hover:bg-darkBlueRibbon"><i
-                  class="fa-xl fa-brands fa-github"></i></a></p>
-          </div>
 
+<section id="projects">
+  <!-- Flex Container -->
+  <div class="container flex flex-col px-24 mx-auto space-y-12 md:mt-32">
+    <!-- Projects -->
+    <div class="space-y-24">
+      <h2 class="text-4xl font-bold text-center">
+        Projects:
+      </h2>
+      <div class="md:space-x-12 md:flex flex-row">
+        <!-- Data Science Project -->
+        <div class="flex flex-col items-center"> 
+          <img class="hidden md:block max-w-sm" src="img/Projectboard.png" alt="Projectboard Picture">
+          <p class="mt-4 text-center text-xl font-bold text-darkGreyishBlue">
+            Habit Tracking Journal
+          </p>
+          <p class="mt-4 text-center">
+            Stack Used: <i class="fa-brands fa-react fa-xl"></i> <i class="fa-brands fa-xl fa-html5" style="color: #f56200;"></i> <i
+              class="fa-brands fa-square-js fa-xl" style="color: #fbff00;"></i> <i class="fa-brands fa-css3-alt fa-xl"
+              style="color: #2b5eb6;"></i> <i class="fa-brands fa-node fa-xl" style="color: #288a4b;"></i>
+          </p>
+          <p class="mt-4 text-center">I made this project to keep track of how I am feeling each day, I am able to keep a daily journal with this app.</p>
+        </div>
+        
+        <!-- Portfolio Template -->
+        <div class="flex flex-col items-center"> 
+          <img class="hidden md:block max-w-sm" src="img/Projectboard.png" alt="Projectboard Picture">
+          <p class="mt-4 text-center text-xl font-bold text-darkGreyishBlue">
+            Portfolio Template
+          </p>
+          <p class="mt-4 text-center">
+            Stack Used: <i class="fa-brands fa-xl fa-html5" style="color: #f56200;"></i> <i
+              class="fa-brands fa-square-js fa-xl" style="color: #fbff00;"></i> <i class="fa-brands fa-css3-alt fa-xl"
+              style="color: #2b5eb6;"></i>
+          </p>
+          <p class="mt-4 text-center">I made this project for other individuals to jumpstart their journey in web development by making an easy-to-use template to create a portfolio.</p>
+        </div>
+        
+        <!-- Life Expectancy Research -->
+        <div class="flex flex-col items-center"> 
+          <img class="hidden md:block max-w-sm" src="img/Projectboard.png" alt="Projectboard Picture">
+          <p class="mt-4 text-center text-xl font-bold text-darkGreyishBlue">
+            Life Expectancy Research
+          </p>
+          <p class="mt-4 text-center">
+            Stack Used: <i class="fa-brands fa-xl fa-html5" style="color: #f56200;"></i> <i
+              class="fa-brands fa-r-project fa-xl" style="color: #0b46ad;"></i>
+          </p>
+          <p class="mt-4 text-center">I made this project to research life expectancy data using R and web technologies.</p>
+          <p class="font-bold mt-4 text-center">Open-source: <a href="https://github.com/iiweby" target="_blank" class="hover:scale-105 ease-in duration-500 p-3 pt-2 px-4 text-white bg-blueRibbon rounded-full baseline hover:bg-darkBlueRibbon"><i class="fa-xl fa-brands fa-github"></i></a></p>
         </div>
       </div>
-  </section>
+    </div>
+  </div>
+</section>
 
   <!-- Resume Section -->
   <section id="resume">
@@ -260,7 +265,7 @@
   </section>
   <!-- Footer Container -->
   <footer class="relative bg-opacity-90 bg-lightBlueRibbon pt-8 pb-6">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4 md:w-full">
       <div class="flex flex-wrap text-left lg:text-left">
         <div class="w-full lg:w-6/12 px-4">
           <h4 class="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
