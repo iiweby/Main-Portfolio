@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tangerine&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Tangerine&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Tangerine&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Belanosima&display=swap");
 
-/*x
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400&family=Lora:ital@1&family=Montserrat:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Lato:ital,wght@0,400;1,300;1,400&family=Lora:ital@1&family=Montserrat:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,500&display=swap");
+
+/*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
 
@@ -594,10 +600,6 @@ video {
   z-index: 50;
 }
 
-.m-0{
-  margin: 0px;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -606,11 +608,6 @@ video {
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.mx-0{
-  margin-left: 0px;
-  margin-right: 0px;
 }
 
 .mb-16{
@@ -671,10 +668,6 @@ video {
 
 .mt-6{
   margin-top: 1.5rem;
-}
-
-.mt-2{
-  margin-top: 0.5rem;
 }
 
 .block{
@@ -761,10 +754,6 @@ video {
   flex-wrap: wrap;
 }
 
-.content-center{
-  align-content: center;
-}
-
 .items-center{
   align-items: center;
 }
@@ -815,10 +804,6 @@ video {
 
 .self-end{
   align-self: flex-end;
-}
-
-.overflow-x-hidden{
-  overflow-x: hidden;
 }
 
 .rounded{
@@ -896,11 +881,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-brightRed{
-  --tw-bg-opacity: 1;
-  background-color: hsl(12 88% 59% / var(--tw-bg-opacity));
-}
-
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
 }
@@ -931,12 +911,12 @@ video {
   padding: 0.75rem;
 }
 
-.p-6{
-  padding: 1.5rem;
+.p-4{
+  padding: 1rem;
 }
 
-.p-0{
-  padding: 0px;
+.p-6{
+  padding: 1.5rem;
 }
 
 .px-24{
@@ -967,16 +947,6 @@ video {
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.px-0{
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 .pb-2{
@@ -1049,6 +1019,16 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-xs\/\[17px\]{
+  font-size: 0.75rem;
+  line-height: 17px;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1067,6 +1047,10 @@ video {
 
 .uppercase{
   text-transform: uppercase;
+}
+
+.italic{
+  font-style: italic;
 }
 
 .leading-loose{
@@ -1098,6 +1082,11 @@ video {
   color: rgb(82 89 93 / var(--tw-text-opacity));
 }
 
+.text-red-500{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
 .text-veryDarkBlue{
   --tw-text-opacity: 1;
   color: hsl(233 12% 13% / var(--tw-text-opacity));
@@ -1106,11 +1095,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-red-500{
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .shadow-lg{
@@ -1155,8 +1139,8 @@ video {
 }
 
 .hamburger-top,
-  .hamburger-middle,
-  .hamburger-bottom {
+.hamburger-middle,
+.hamburger-bottom {
   position: absolute;
   top: 0;
   left: 0;
@@ -1296,10 +1280,6 @@ video {
 
   .md\:w-96{
     width: 24rem;
-  }
-
-  .md\:w-full{
-    width: 100%;
   }
 
   .md\:flex-row{
